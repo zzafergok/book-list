@@ -1,0 +1,85 @@
+$li-ButtonColor: #3c7885;
+$skin-color: #e7dac6;
+
+body {
+  background-color: $skin-color;
+  color: #1B1528;  
+}
+
+.navbar{
+  padding: 10px 20px;
+
+  h1{
+    margin: 10px 0;
+  }
+}
+
+.book-list{
+  margin: 20px;
+
+  ul{
+    padding: 0;
+    list-style-type: none;
+
+    li{
+      background-color: $li-ButtonColor;
+      color: rgba(255, 251, 251, 0.877);
+      border-radius: 4px;
+      padding: 10px;
+      cursor: pointer;
+      margin: 10px 0;
+      
+    }
+
+    li:hover{
+      opacity: 0.7;
+      text-decoration: line-through;
+    }
+
+    .title{
+      font-weight: 400;
+      font-size: 1.2rem;
+    }
+
+    .author{
+      font-size: 0.9rem;
+      color: #ddd;
+    }
+  }
+}
+
+.empty{
+  margin: 20px;
+  text-align: center;
+  color: #984447;
+}
+  
+.form{
+  padding: 15px auto;
+
+  input[type='text']{
+    width: 90%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 6px 0;
+    background-color: $skin-color;
+    color: #3e3e3e;
+    border: 1.8px solid #3d76b8;
+    border-radius: 12px;
+  }
+
+  input[type='submit']{
+    margin: 10px auto;
+    background-color: $li-ButtonColor;
+    color: rgba(255, 251, 251, 0.877);
+    border: 1.75px solid transparent;
+    border-radius: 12px;
+    padding: 6px 20px;
+    display: block;
+  }
+
+  input:focus{
+    outline: none;
+  }
+}
+ 
