@@ -20,6 +20,7 @@ body {
   ul{
     padding: 0;
     list-style-type: none;
+    
 
     li{
       background-color: $li-ButtonColor;
@@ -28,7 +29,6 @@ body {
       padding: 10px;
       cursor: pointer;
       margin: 10px 0;
-      
     }
 
     li:hover{
@@ -39,11 +39,17 @@ body {
     .title{
       font-weight: 400;
       font-size: 1.2rem;
+      white-space: nowrap; 
+      overflow: hidden;
+      text-overflow: ellipsis; 
     }
 
     .author{
       font-size: 0.9rem;
       color: #ddd;
+      white-space: nowrap; 
+      overflow: hidden;
+      text-overflow: ellipsis; 
     }
   }
 }
